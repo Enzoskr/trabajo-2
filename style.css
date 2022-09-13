@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  /*colores para el background*/
+  --background: #220901;
+  --primary: #621708;
+  --secondary: #941b0c;
+  --bg-naranja: #bc3908;
+  --bg-amarillo: #f6aa1c;
+
+  /*colores para los textos*/
+  --text-color-blanco: #fafafa;
+  --text-color-gris: #6666;
+  -text-color-negro: #0a0a0a;
+} /*
+/*header {
+  background-image: url(navi.png);
+  background-repeat: no-repeat;
+  background-position: initial;
+}esto lo hice yo
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "poppins", sans-serif;
+}
+/* header */
+header {
+  background-color: var(--secondary);
+  background-image: var(--secondary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0px 40px 0px 40px;
+  position: fixed;
+  top: 0;
+}
+.logo {
+  height: 70%;
+  background-image: var(--secondary);
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.navbar {
+  gap: 200px;
+}
+.navbar-list {
+  gap: 40px;
+}
+.navbar-list a {
+  color: var(--text-color-black);
+}
+
+.icono {
+  border: 1px solid var(--text-color-black);
+  height: 60px;
+  padding: 10px 16px;
+  font-weight: 600;
+  margin-top: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body {
+  background: var(--bg-naranja);
+}
