@@ -11,7 +11,7 @@
   /*colores para los textos*/
   --text-color-blanco: #fafafa;
   --text-color-gris: #6666;
-  -text-color-negro: #0a0a0a;
+  -text-color-negro: #000000;
 }
 * {
   margin: 0;
@@ -67,4 +67,93 @@ header {
 }
 body {
   background: var(--secondary);
+}
+
+.main {
+  background-color: black
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-gris);
+width: 100%;
+}
+
+#hero{
+  background-color: var(--bg-celesteclaro);
+  margin-top: 60px;
+  padding: 70px 0px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.hero-text{
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.hero-text h1{
+  font-size: 50px;
+  min-width: 400px;
+  font-weight: 800;
+  color: var(--text-color-blanco);
+}
+.hero-text p{
+  font-size: 18px;
+  width: 70%;
+  color: var(--text-color-blanco);
+}
+.hero-text a{
+  color: black;
+  background-color:var(--primary);
+  width: 120px;
+  padding: 10px 0px;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.equipo-1{
+  width: 300px;
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.equipotop{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px;
+  }
+
+.equipo-1 h2{
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.equipo-1 span{
+  background-color: #00a8e8;
+  width: 60px;
+  border-radius: 12px;
+  padding: 5px 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.equipo-region{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 400px;
+  background-color: aliceblue;
 }
