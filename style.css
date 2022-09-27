@@ -188,7 +188,7 @@ body {
   min-width: 400px;
   font-weight: 80%;
   color: var(--text-color-blanco);
-  max-height: 140px;
+  max-height: 8%;
  
 }
 .information-text p{
@@ -209,7 +209,8 @@ body {
   justify-content: center;
   gap: 15px;
   padding: 40px 0;
-  max-width: 1200px;
+  max-width: 90%;
+  max-height: 50%;
 }
 
 /* equipo 2 */
@@ -223,6 +224,7 @@ body {
   flex-direction: column;
   gap: 10px;
   color: var(--text-color-blanco);
+  max-height: 80%;
 }
 
 
@@ -273,82 +275,6 @@ body {
   font-weight: 600;
 }
 
-.offer-time img {
-  width: 20px;
-}
-
-
-/* footer */
-
-footer {
-  background: var(--background);
-  color: var(--bg-white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 60px 0;
-}
-
-footer a,
-footer p {
-  color: var(--text-gray);
-  font-weight: 300;
-  font-size: 14px;
-}
-
-footer span {
-  font-weight: 800;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-/* equipo 3 */
-.equipo-3{
-  width: 300px;
-  background-color: var(--background);
-  padding: 20px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: var(--text-color-blanco);
-}
-.equipotop3{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 100px;
-  }
-
-.equipo-3 h2{
-  font-size: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background: linear-gradient(to top,blue, white);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.equipo-3 span{
-  background-color: #00a8e8;
-  width: 80px;
-  border-radius: 1rem;
-  padding: 5px 0px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.equipo-región3{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 400px;
-
-}
+h2 p{
+  background-color: #5E60CE;
+  text-align: center;}
