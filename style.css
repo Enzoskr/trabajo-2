@@ -11,7 +11,7 @@
   /*colores para los textos*/
   --text-color-blanco: #fafafa;
   --text-color-gris: #6666;
-  -text-color-negro: #000000;
+  --text-color-negro: #000000;
 }
 * {
   margin: 0;
@@ -23,8 +23,8 @@
 }
 /* header */
 header {
- /* background-color: var(--primary); */
-  background:linear-gradient(var(--background), var(--primary));
+  /* background-color: var(--primary); */
+  background: linear-gradient(var(--background), var(--primary));
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -53,7 +53,6 @@ header {
 }
 .navbar-list {
   gap: 40px;
-  
 }
 .navbar-list a {
   color: var(--text-color-blanco);
@@ -66,11 +65,11 @@ header {
   cursor: pointer;
 }
 body {
-  background: var(--bg-celeste);
+  background: var(--primary);
 }
-
-.main {
-  background-color: black
+/* MAIN */
+main {
+  background-color: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,43 +78,51 @@ body {
   width: 100%;
 }
 
-#hero{
-  background-color: var(--primary);
+#hero {
   margin-top: 65px;
   padding: 70px 0px;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 450px;
-  min-width: 40%;
-  gap: 20px;
 }
-.hero-text{
-
+.hero-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 50%;
+  width: 100%;
 }
-.hero-text h1{
+.hero-text h1 {
   font-size: 50px;
   min-width: 400px;
   font-weight: 800;
   color: var(--text-color-blanco);
-  width: 90%;
-  background: linear-gradient(to top, #7400B8,#6930C3,#5E60CE,#5390D9, #4EA8DE, #48BFE3,#56CFE1, #64DFDF, #72EFDD, #80FFDB );
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    #7400b8,
+    #6930c3,
+    #5e60ce,
+    #5390d9,
+    #4ea8de,
+    #48bfe3,
+    #56cfe1,
+    #64dfdf,
+    #72efdd,
+    #80ffdb
+  );
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
-.hero-text p{
+.hero-text p {
   font-size: 18px;
-  width: 70%;
+  width: 100%;
   color: var(--text-color-blanco);
 }
-.hero-text a{
+.hero-text a {
   color: var(--text-color-blanco);
-  background-color:var(--bg-celeste);
+  background-color: var(--bg-celeste);
   width: 20%;
   padding: 10px 0px;
   border-radius: 12px;
@@ -123,7 +130,7 @@ body {
   text-align: center;
 }
 
-.equipo-1{
+.equipo-1 {
   width: 300px;
   background-color: var(--background);
   padding: 20px;
@@ -133,24 +140,24 @@ body {
   gap: 10px;
   color: var(--text-color-blanco);
 }
-.equipotop{
+.equipotop {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 100px;
-  }
+}
 
-.equipo-1 h2{
+.equipo-1 h2 {
   font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
-  background: linear-gradient(to top,red, white);
+  background: linear-gradient(to top, red, white);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-.equipo-1 span{
+.equipo-1 span {
   background-color: #00a8e8;
   width: 80px;
   border-radius: 1rem;
@@ -159,122 +166,151 @@ body {
   font-size: 18px;
 }
 
-.equipo-región{
+.equipo-región {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   gap: 400px;
-
 }
-
-.information-text{
-  margin-top: 50px;
-  padding: 70px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 450px;
-  min-width: 40%;
-  gap: 20px 12px;
-  background-color: var(--bg-celesteclaro);
-
+/* TEXTO */
+.information-text {
+  max-width: 1200px;
+  background-color: var(--primary);
 }
-.information-text h2{
+.information-text h2 {
   font-size: 16px;
-  text-decoration:underline ;
+  text-decoration: underline;
   text-align: center;
-  flex-direction: column; 
-  min-width: 400px;
-  font-weight: 80%;
   color: var(--text-color-blanco);
-  max-height: 8%;
- 
+  /* gap: 30px; */
 }
-.information-text p{
-  font-size: 90%;
-  width: 40%;
+.information-text p {
+  max-width: 1200px;
   background-color: var(--bg-celesteclaro);
+  padding: 10px 5px;
+  color: var(--text-color-blanco);
+  text-align: center;
+  border-radius: 1rem;
+}
+
+#equipos {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px 5px;
-  min-width: 400px;
-  color: var(--text-color-blanco);
+  align-items: center;
+  padding: 40px 0;
+  max-width: 1200px;
+  width: 100%;
+  /* background del container del equipo */
+  /* background-color: #000000; */
 }
-/* container de productos */
+
+/* h2 del container */
+.container-equipos h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  background-color: var(--bg-celesteclaro);
+  color: var(--text-color-blanco);
+  border-radius: 1rem;
+}
+
+/* container de equipos */
+
 .container-equipos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  padding: 40px 0;
-  max-width: 90%;
-  max-height: 50%;
+  padding: 40px 0px;
+  max-width: 800px;
 }
 
-/* equipo 2 */
+/*  equipos */
 
-.equipo-2{
-  width: 300px;
+.equipo-2 {
   background-color: var(--background);
   padding: 20px;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  color: var(--text-color-blanco);
+  justify-content: center;
+  gap: 20px;
+  width: 500px;
+}
+
+.equipo-2 img {
+  border-radius: 1rem;
+  max-width: 500px;
   max-height: 80%;
 }
 
-
-.equipotop2{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 100px;
- 
-}
-
-.equipo-2 h2 {
+.equipo-2 h3 {
   font-size: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background: linear-gradient(to top,yellow, blue);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
- 
-  
+  color: var(--text-color-blanco);
 }
 
+.equipotop2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
 .equipo-2 span {
   background-color: #00a8e8;
-  width: 60px;
-  border-radius: 1rem;
+  border-radius: 12px;
   padding: 5px 0px;
-  font-size: 14px;
-  text-align: center;
-
+  font-weight: 800;
+  color: var(--text-color-blanco);
 }
 
-.equipo-región2{
+.equipo-región2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  gap: 400px;
-  
+  color: var(--text-color-blanco);
 }
 
-
-.offer-time {
-  display: flex;
-  gap: 10px;
+.btn-load {
+  background: none;
+  border: 1px solid var(--text-color-blanco);
+  padding: 10px 35px;
+  color: violet;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* Footer */
+.footer {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-weight: 600;
+  gap: 40px;
+  padding: 60px 0;
+ background-color: var(--bg-celesteclaro); */
+  background: var(--background);
+  color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
 }
-
-h2 p{
-  background-color: #5E60CE;
-  text-align: center;}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 0;
+}
+footer a,
+p {
+  color: var(--text-color-negro);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 0;
+}
