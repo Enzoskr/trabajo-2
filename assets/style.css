@@ -207,7 +207,7 @@ main {
 }
 
 /* h2 del container */
-.container-equipos h2 {
+#equipos h2 {
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 40px;
@@ -221,11 +221,12 @@ main {
 .container-equipos {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 15px;
   padding: 40px 0px;
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 /*  equipos */
@@ -237,19 +238,21 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 0px;
   width: 500px;
+  /* height: 400px; */
 }
 
 .equipo-2 img {
   border-radius: 1rem;
   max-width: 500px;
-  max-height: 80%;
+  height: 300px;
 }
 
 .equipo-2 h3 {
   font-size: 16px;
   color: var(--text-color-blanco);
+  gap: 12px;
 }
 
 .equipotop2 {
@@ -264,6 +267,7 @@ main {
   padding: 5px 0px;
   font-weight: 800;
   color: var(--text-color-blanco);
+  margin-top: 40px;
 }
 
 .equipo-región2 {
