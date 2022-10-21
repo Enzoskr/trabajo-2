@@ -85,16 +85,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 70%;
+  width: 50%;
+  align-items: center;
 }
 .hero-text h1 {
   font-size: 50px;
   min-width: 400px;
+  width: 80%;
   font-weight: 800;
   color: var(--text-color-blanco);
   width: 100%;
@@ -114,16 +117,19 @@ main {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  text-align: center;
 }
 .hero-text p {
+  display: flex;
   font-size: 18px;
-  width: 70%;
+  width: 100%;
   color: var(--text-color-blanco);
+  text-align: center;
 }
 .hero-text a {
   color: var(--text-color-blanco);
   background-color: var(--bg-celeste);
-  width: 20%;
+  width: 100%;
   padding: 10px 0px;
   border-radius: 12px;
   font-size: 16px;

@@ -1,11 +1,17 @@
 @media (max-width: 992px) {
-  .navbar {
-    .gap 10px;
-  }
+.icono{
+  display: none;
+}
+.hero-text a{
+  display: none;}
+}
+.equipo-1{
+  flex-direction: column;
 }
 
 @media (max-width: 576px) {
   #hero {
     width: 70%;
   }
+  .
 }
