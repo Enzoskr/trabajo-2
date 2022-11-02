@@ -1,11 +1,12 @@
 @media (max-width: 992px) {
-.icono{
-  display: none;
+  .icono {
+    display: none;
+  }
+  .hero-text a {
+    display: none;
+  }
 }
-.hero-text a{
-  display: none;}
-}
-.equipo-1{
+.equipo-1 {
   flex-direction: column;
 }
 
@@ -13,5 +14,4 @@
   #hero {
     width: 70%;
   }
-  .
 }
